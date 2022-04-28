@@ -25,7 +25,7 @@ function check_snt(snt) {
     flag = false;
     return 0;
   } else {
-    for (var i = 2; i <= snt / 2; i++) {
+    for (var i = 2; i <= Math.sqrt(snt); i++) {
       if (snt % i == 0) {
         flag = false;
         break;
